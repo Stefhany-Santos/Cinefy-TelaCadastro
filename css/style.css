@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&display=swap');
+:root {
+  --green: #46ca82;
+  --green-dark: #0c0c0c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60) 100%),
+    url(../img/luca.jpg); /* cor de fundo do site */
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; /* ocultando a barra de rolagem */
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.area-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent; /* fundo formulário */
+  width: 355px;
+  height: 430px;
+  padding: 40px;
+  border-radius: 10px;
+}
+.login form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.login input {
+  margin: 7px;
+  background-color: transparent; /* fundo input */
+  color: white; /* cor das letras dentro do input */
+  border: 2px solid white;
+  height: 35px;
+  padding-left: 10px;
+  outline: none; /* remove a borda de dentro do input*/
+  border-radius: 50px;
+}
+.login img {
+  width: 220px;
+  height: auto;
+}
+input::placeholder {
+  color: #ffffff;
+  font-size: 15px;
+}
+
+form [type='submit'] {
+  display: block;
+  background-color: var(--green);
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin-top: 15px;
+}
+
+p {
+  font-size: 14px;
+  color: white;
+}
+a {
+  color: var(--green);
+  text-decoration: none;
+  margin-left: 10px;
+}
+h2{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+/* js */
+.errorInput{
+  border: 2px solid rgb(255, 52, 52) !important;
+} 
